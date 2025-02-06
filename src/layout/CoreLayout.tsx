@@ -16,7 +16,7 @@ import {
 function CoreLayout(props: any) {
   const [loading, setLoading] = useState("Y");
 
-  const { displaySupportUs } = useWidget();
+  const { displaySupportUs, setDisplaySupportUs } = useWidget();
 
   const openInvitation = () => {
     new Audio("/Yiruma-RiverFlowsInYou.mp3").play();
@@ -46,7 +46,10 @@ function CoreLayout(props: any) {
           </>
         )}
       </Wrapper>
-      <Modal display={displaySupportUs}></Modal>
+      <Modal
+        display={displaySupportUs}
+        onClose={() => setDisplaySupportUs(false)}
+      ></Modal>
     </>
   );
 }
