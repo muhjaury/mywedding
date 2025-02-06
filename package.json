@@ -1,22 +1,33 @@
 {
-  "name": "mywedding",
+  "name": "idong-fe",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "build": "env-cmd -e build:prod next build",
+    "build:dev": "env-cmd -e build:dev next build",
+    "build:prod": "env-cmd -e build:prod next build",
     "start": "next start",
+    "start:dev": "next dev",
     "lint": "next lint"
   },
   "dependencies": {
+    "file-loader": "^6.2.0",
+    "next": "15.1.6",
+    "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "sass": "^1.77.8",
+    "styled-components": "^6.1.12",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
-    "@types/react-dom": "^19"
+    "@types/react-dom": "^19",
+    "env-cmd": "^10.1.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "typescript": "^5"
   }
 }
