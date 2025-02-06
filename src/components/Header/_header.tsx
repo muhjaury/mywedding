@@ -58,15 +58,14 @@ export const Nav = styled.span`
 `;
 
 export const ButtonWrapper = styled.div`
-  min-height: 50px;
   display: flex;
   align-items: center;
 
   > div {
-    width: 110px;
+    min-width: 100px !important;
     transition: 0.2s;
     > button {
-      font-size: 20px;
+      font-size: 16px;
       color: ${color.a1};
     }
 
