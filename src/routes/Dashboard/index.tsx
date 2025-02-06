@@ -1,6 +1,6 @@
 "use client";
 
-import { helloValentina, kissingSeason } from "@/assets/font";
+import { helloValentina } from "@/assets/font";
 import { Button, Content, Countdown, Section } from "@/components";
 import CoreLayout from "@/layout/CoreLayout";
 import WEDDING_DECORATION from "./../../assets/img/decor.png";
@@ -49,10 +49,7 @@ function Dashboard() {
                 مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍ لِّقَوْمٍ
                 يَتَفَكَّرُونَ
               </ArabicPrimary>
-              <DescriptionPrimary
-                className={kissingSeason.className}
-                data-aos="fade-up"
-              >
+              <DescriptionPrimary data-aos="fade-up">
                 "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
                 pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
                 cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di
@@ -72,18 +69,12 @@ function Dashboard() {
         <Section type="secondary">
           <ContentWrapper>
             <ContentLeft2>
-              <ContentLeft2Title
-                className={kissingSeason.className}
-                data-aos="fade-up"
-              >
+              <ContentLeft2Title data-aos="fade-up">
                 Bismillahirrahmanirrahim
                 <br />
                 Assalamu'alaikum Warahmatullahi Wabarakatuh
               </ContentLeft2Title>
-              <ContentLeft2Description
-                className={kissingSeason.className}
-                data-aos="fade-up"
-              >
+              <ContentLeft2Description data-aos="fade-up">
                 Maha Suci Allah Subhanahu Wa Ta'ala, yang telah menciptakan
                 makhluk-Nya berpasang-pasangan, Ya Allah perkenankanlah kami
                 merangkaikan cinta kasih yang Engkau ciptakan kepada kami :
@@ -119,10 +110,7 @@ function Dashboard() {
                   Kiki
                 </NameSmall2>
               </div>
-              <ContentLeft2Description
-                className={kissingSeason.className}
-                data-aos="fade-up"
-              >
+              <ContentLeft2Description data-aos="fade-up">
                 Untuk melaksanakan syariat agama-Mu dan mengikuti sunnah
                 Rasul-Mu dalam membentuk ikatan keluarga yang Sakinah, Mawaddah,
                 Warahmah dengan harapan memperoleh keturunan yang sholeh,
@@ -152,10 +140,7 @@ function Dashboard() {
               />
             </MapsWrapper1>
             <ContentRight4>
-              <ContentRight4Description
-                className={kissingSeason.className}
-                data-aos="fade-up"
-              >
+              <ContentRight4Description data-aos="fade-up">
                 Dengan memohon Ridho dan Rahmat Allah Subhanahu Wa Ta'ala, kami
                 bermaksud menyelenggarakan Akad Nikah dan Resepsi kami, yang
                 Insya Allah akan dilaksanakan pada :
@@ -166,10 +151,7 @@ function Dashboard() {
               >
                 Hari Sabtu, 19 April 2025
               </ContentRight4Date>
-              <ContentRight4Description
-                className={kissingSeason.className}
-                data-aos="fade-up"
-              >
+              <ContentRight4Description data-aos="fade-up">
                 Jl. Samsul Alam Bulu, Kota Parepare, Sulawesi Selatan
               </ContentRight4Description>
               <MapsWrapper2 data-aos="fade-up">
@@ -181,12 +163,7 @@ function Dashboard() {
                 />
               </MapsWrapper2>
               <ButtonWrapper data-aos="fade-up">
-                <Button
-                  onClick={handleClickMapsButton}
-                  className={kissingSeason.className}
-                >
-                  Buka Maps
-                </Button>
+                <Button onClick={handleClickMapsButton}>Buka Maps</Button>
               </ButtonWrapper>
             </ContentRight4>
           </ContentWrapper4>

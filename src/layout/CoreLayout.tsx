@@ -1,6 +1,5 @@
 "use client";
 
-import { kissingSeason } from "@/assets/font";
 import { Footer, Header, Loading, Modal } from "@/components";
 import { useWidget } from "@/context";
 import debounce from "@/utils/debounced";
@@ -38,9 +37,7 @@ function CoreLayout(props: any) {
           <>
             <LoadingWrapper onClick={() => handleLoadingClick()}>
               <Loading />
-              <LoadingText className={kissingSeason.className}>
-                Buka Undangan
-              </LoadingText>
+              <LoadingText>Buka Undangan</LoadingText>
             </LoadingWrapper>
           </>
         ) : (

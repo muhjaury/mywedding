@@ -1,4 +1,4 @@
-import { helloValentina, kissingSeason } from "@/assets/font";
+import { helloValentina } from "@/assets/font";
 import { useWidget } from "@/context";
 import { useEffect, useState } from "react";
 import { Button } from "..";
@@ -29,16 +29,11 @@ function Header() {
       <HeaderText className={helloValentina.className}>
         Muhammad Jaury & Kiki Astrina
       </HeaderText>
-      <Wrapper scrolled={scrolled} className={kissingSeason.className}>
+      <Wrapper scrolled={scrolled}>
         <Nav>Home</Nav>
         <Nav>Gallery</Nav>
         <ButtonWrapper>
-          <Button
-            className={kissingSeason.className}
-            onClick={() => setDisplaySupportUs(true)}
-          >
-            Support Us
-          </Button>
+          <Button onClick={() => setDisplaySupportUs(true)}>Support Us</Button>
         </ButtonWrapper>
       </Wrapper>
     </>

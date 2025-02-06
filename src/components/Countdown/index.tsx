@@ -6,7 +6,6 @@ import {
   UnitTimeWrapper,
   Wrapper,
 } from "./_countdown";
-import { kissingSeason } from "@/assets/font";
 
 function Countdown(props: any) {
   const [days, setDays] = useState<string>("00");
@@ -49,27 +48,19 @@ function Countdown(props: any) {
     <Wrapper {...props}>
       <UnitTimeWrapper>
         <UnitTimeTitle>Days</UnitTimeTitle>
-        <UnitTimeValue className={kissingSeason.className}>
-          {days}
-        </UnitTimeValue>
+        <UnitTimeValue>{days}</UnitTimeValue>
       </UnitTimeWrapper>
       <UnitTimeWrapper>
         <UnitTimeTitle>Hours</UnitTimeTitle>
-        <UnitTimeValue className={kissingSeason.className}>
-          {hours}
-        </UnitTimeValue>
+        <UnitTimeValue>{hours}</UnitTimeValue>
       </UnitTimeWrapper>
       <UnitTimeWrapper>
         <UnitTimeTitle>Minutes</UnitTimeTitle>
-        <UnitTimeValue className={kissingSeason.className}>
-          {minutes}
-        </UnitTimeValue>
+        <UnitTimeValue>{minutes}</UnitTimeValue>
       </UnitTimeWrapper>
       <UnitTimeWrapper>
         <UnitTimeTitle>Seconds</UnitTimeTitle>
-        <UnitTimeValue className={kissingSeason.className}>
-          {seconds}
-        </UnitTimeValue>
+        <UnitTimeValue>{seconds}</UnitTimeValue>
       </UnitTimeWrapper>
     </Wrapper>
   );
