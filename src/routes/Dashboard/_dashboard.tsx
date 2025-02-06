@@ -68,6 +68,10 @@ export const GapName = styled.div`
   color: ${color.a4};
   font-size: 40px;
   margin-top: -24px;
+
+  @media all and (min-width: 1024px) {
+    margin-top: -56px;
+  }
 `;
 
 export const NameBig2 = styled.div`
