@@ -1,7 +1,7 @@
 "use client";
 
 import { helloValentina, kissingSeason } from "@/assets/font";
-import { Content, Countdown, Section } from "@/components";
+import { Button, Content, Countdown, Section } from "@/components";
 import CoreLayout from "@/layout/CoreLayout";
 import WEDDING_DECORATION from "./../../assets/img/decor.png";
 import WEDDING_PRAY from "./../../assets/img/muslim-pray.png";
@@ -9,10 +9,14 @@ import WEDDING_PICTURE from "./../../assets/img/muslim-wedding.png";
 import {
   A,
   ArabicPrimary,
+  ButtonWrapper,
   ContentLeft2,
   ContentLeft2Description,
   ContentLeft2Title,
   ContentRight1,
+  ContentRight4,
+  ContentRight4Date,
+  ContentRight4Description,
   ContentWrapper,
   DescriptionPrimary,
   GapName,
@@ -27,6 +31,10 @@ import {
 } from "./_dashboard";
 
 function Dashboard() {
+  const handleClickMapsButton = () => {
+    window.open("https://maps.app.goo.gl/rc2UTiXtQUFf5fTY6");
+  };
+
   return (
     <CoreLayout>
       <Content>
@@ -104,21 +112,37 @@ function Dashboard() {
           <Countdown />
         </Section>
         <Section type="secondary">
-          <MapsWrapper>
-            <IFrame
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3979.9215985273427!2d119.636662!3d-4.036422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1738825465463!5m2!1sen!2sid"
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-            <A
-              href="https://maps.app.goo.gl/rc2UTiXtQUFf5fTY6"
-              className={kissingSeason.className}
-              target="_blank"
-            >
-              Buka Maps
-            </A>
-          </MapsWrapper>
+          <ContentWrapper>
+            <MapsWrapper>
+              <IFrame
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3979.9215985273427!2d119.636662!3d-4.036422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1738825465463!5m2!1sen!2sid"
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </MapsWrapper>
+            <ContentRight4>
+              <ContentRight4Description className={kissingSeason.className}>
+                Dengan memohon Ridho dan Rahmat Allah Subhanahu Wa Ta'ala, kami
+                bermaksud menyelenggarakan Akad Nikah dan Resepsi kami, yang
+                Insya Allah akan dilaksanakan pada :
+              </ContentRight4Description>
+              <ContentRight4Date className={helloValentina.className}>
+                Hari Sabtu, 19 April 2025
+              </ContentRight4Date>
+              <ContentRight4Description className={kissingSeason.className}>
+                Jl. Samsul Alam Bulu, Kota Parepare, Sulawesi Selatan
+              </ContentRight4Description>
+              <ButtonWrapper>
+                <Button
+                  onClick={handleClickMapsButton}
+                  className={kissingSeason.className}
+                >
+                  Buka Maps
+                </Button>
+              </ButtonWrapper>
+            </ContentRight4>
+          </ContentWrapper>
         </Section>
       </Content>
     </CoreLayout>

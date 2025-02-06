@@ -13,6 +13,7 @@ export const ContentWrapper = styled.div`
 
   @media all and (min-width: 1024px) {
     flex-direction: row;
+    gap: 32px;
   }
 `;
 
@@ -119,7 +120,7 @@ export const IFrame = styled.iframe`
 
 export const A = styled.a`
   font-size: 20px;
-  color: ${color.a1};
+  color: ${color.a4};
 `;
 
 export const DescriptionPrimary = styled.div`
@@ -144,4 +145,50 @@ export const ArabicPrimary = styled.div`
   }
 `;
 
-export const Img = styled.img<Int_Img>``;
+export const Img = styled.img<Int_Img>`
+  -webkit-filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+`;
+
+export const ContentRight4 = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+
+  > div {
+    min-width: 100px !important;
+    transition: 0.2s;
+    > button {
+      font-size: 16px;
+      color: ${color.a1};
+    }
+
+    &:hover {
+      padding-bottom: 8px;
+      > button {
+        color: ${color.a1};
+      }
+    }
+  }
+`;
+
+export const ContentRight4Description = styled.div`
+  text-align: left;
+  color: ${color.a5};
+  font-size: 24px;
+`;
+
+export const ContentRight4Date = styled.div`
+  text-align: center;
+  color: ${color.a5};
+  font-size: 40px;
+
+  @media all and (min-width: 1024px) {
+    font-size: 56px;
+  }
+`;

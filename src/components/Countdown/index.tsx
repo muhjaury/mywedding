@@ -1,4 +1,4 @@
-import moment from "moment";
+import moment from "moment-timezone";
 import { useEffect, useState } from "react";
 import {
   UnitTimeTitle,
@@ -15,10 +15,10 @@ function Countdown() {
   const [seconds, setSeconds] = useState<string>("00");
 
   useEffect(() => {
-    const countDownDate = moment("Apr 19, 2025 08:00:00");
+    const countDownDate = moment("Apr 19, 2025 08:00:00").tz("Asia/Makassar");
 
     var x = setInterval(function () {
-      const timeNow = moment();
+      const timeNow = moment().tz("Asia/Makassar");
       const distance = countDownDate.diff(timeNow);
 
       const days = Math.floor(distance / (1000 * 60 * 60 * 24))
@@ -36,13 +36,11 @@ function Countdown() {
         .toString()
         .padStart(2, "0");
 
-      setDays(days);
-      setHours(hours);
-      setMinutes(minutes);
-      setSeconds(seconds);
-
-      if (distance < 0) {
-        clearInterval(x);
+      if (distance > 0) {
+        setDays(days);
+        setHours(hours);
+        setMinutes(minutes);
+        setSeconds(seconds);
       }
     }, 1000);
   });
