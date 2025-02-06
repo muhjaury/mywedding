@@ -39,8 +39,7 @@ function CoreLayout(props: any) {
           </>
         ) : (
           <>
-            <Div className="snow" />
-            <Div className="snow2" />
+            {/* <Div className="snow" /> */}
             <Header />
             <Content>{props.children}</Content>
             <Footer />

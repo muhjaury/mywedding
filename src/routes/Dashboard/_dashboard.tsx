@@ -22,6 +22,83 @@ export const ContentRight1 = styled.div`
   gap: 16px;
 `;
 
+export const ContentLeft2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
+
+export const ContentLeft2Title = styled.div`
+  text-align: center;
+  color: ${color.a4};
+  font-size: 32px;
+`;
+
+export const ContentLeft2Description = styled.div`
+  text-align: center;
+  color: ${color.a4};
+  font-size: 24px;
+`;
+
+export const NameBig1 = styled.div`
+  text-align: left;
+  color: ${color.a5};
+  font-size: 40px;
+
+  @media all and (min-width: 1024px) {
+    padding-left: 120px;
+    font-size: 56px;
+  }
+`;
+
+export const NameSmall1 = styled.div`
+  text-align: left;
+  color: ${color.a5};
+  font-size: 24px;
+
+  @media all and (min-width: 1024px) {
+    padding-left: 120px;
+    font-size: 56px;
+  }
+`;
+
+export const GapName = styled.div`
+  text-align: center;
+  color: ${color.a4};
+  font-size: 40px;
+  margin-top: -24px;
+`;
+
+export const NameBig2 = styled.div`
+  text-align: right;
+  color: ${color.a5};
+  font-size: 40px;
+
+  @media all and (min-width: 1024px) {
+    padding-right: 120px;
+    font-size: 56px;
+  }
+`;
+
+export const NameSmall2 = styled.div`
+  text-align: right;
+  color: ${color.a5};
+  font-size: 24px;
+
+  @media all and (min-width: 1024px) {
+    padding-right: 120px;
+    font-size: 56px;
+  }
+`;
+
+export const Title3 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  color: ${color.a1};
+`;
+
 export const MapsWrapper = styled.div`
   display: flex;
   flex-direction: column;

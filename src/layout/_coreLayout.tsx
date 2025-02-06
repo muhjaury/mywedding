@@ -38,4 +38,6 @@ export const Content = styled.div`
   min-height: calc(100vh - 260px - 80px);
 `;
 
-export const Div = styled.div``;
+export const Div = styled.div`
+  z-index: 98;
+`;
