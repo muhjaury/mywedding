@@ -23,6 +23,9 @@ export const LoadingWrapper = styled.div`
   gap: 16px;
   padding: 32px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 export const LoadingText = styled.div`
