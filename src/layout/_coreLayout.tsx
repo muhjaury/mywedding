@@ -39,5 +39,5 @@ export const Content = styled.div`
 `;
 
 export const Div = styled.div`
-  z-index: 98;
+  z-index: 3;
 `;

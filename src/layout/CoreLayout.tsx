@@ -39,10 +39,10 @@ function CoreLayout(props: any) {
           </>
         ) : (
           <>
-            {/* <Div className="snow" /> */}
             <Header />
             <Content>{props.children}</Content>
             <Footer />
+            <Div className="snow" />
           </>
         )}
       </Wrapper>

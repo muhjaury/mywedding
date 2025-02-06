@@ -13,4 +13,5 @@ export const Wrapper = styled.div`
 
 export const Span = styled.span`
   color: ${color.a4};
+  cursor: pointer;
 `;
