@@ -8,7 +8,7 @@ interface IF_Wrapper {
 export const Wrapper = styled.div<IF_Wrapper>`
   overflow: hidden;
   position: relative;
-  padding: 32px 16px;
+  padding: 48px 16px;
   width: 100%;
   min-height: 320px;
   background: ${({ type }) => (type === "secondary" ? color.a2 : color.a4)};
