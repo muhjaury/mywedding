@@ -8,7 +8,7 @@ import {
 } from "./_countdown";
 import { kissingSeason } from "@/assets/font";
 
-function Countdown() {
+function Countdown(props: any) {
   const [days, setDays] = useState<string>("00");
   const [hours, setHours] = useState<string>("00");
   const [minutes, setMinutes] = useState<string>("00");
@@ -46,7 +46,7 @@ function Countdown() {
   });
 
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <UnitTimeWrapper>
         <UnitTimeTitle>Days</UnitTimeTitle>
         <UnitTimeValue className={kissingSeason.className}>

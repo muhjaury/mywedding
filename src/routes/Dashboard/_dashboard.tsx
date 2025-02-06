@@ -172,16 +172,7 @@ export const Img = styled.img<Int_Img>`
   -webkit-filter: drop-shadow(1px 1px 1px #222);
   filter: drop-shadow(1px 1px 1px #222);
 
-  ${({ behindtext }) =>
-    behindtext === "Y" &&
-    `position:absolute;
-    bottom:-96px;
-    filter:grayscale(.7);
-`}
-
   @media all and (min-width: 1024px) {
-    position: relative;
-    filter: none;
     bottom: 0;
   }
 `;
