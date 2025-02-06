@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 interface Int_Img {
   src: any;
+  behindtext?: string;
 }
 
 export const ContentWrapper = styled.div`
@@ -24,6 +25,8 @@ export const ContentRight1 = styled.div`
 `;
 
 export const ContentLeft2 = styled.div`
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -168,6 +171,19 @@ export const ArabicPrimary = styled.div`
 export const Img = styled.img<Int_Img>`
   -webkit-filter: drop-shadow(1px 1px 1px #222);
   filter: drop-shadow(1px 1px 1px #222);
+
+  ${({ behindtext }) =>
+    behindtext === "Y" &&
+    `position:absolute;
+    bottom:-96px;
+    filter:grayscale(.7);
+`}
+
+  @media all and (min-width: 1024px) {
+    position: relative;
+    filter: none;
+    bottom: 0;
+  }
 `;
 
 export const ContentWrapper4 = styled.div`
