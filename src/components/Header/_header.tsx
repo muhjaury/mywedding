@@ -7,13 +7,18 @@ interface IF_Wrapper {
 
 export const HeaderText = styled.div`
   height: 160px;
-  padding: 32px 80px 0 80px;
+  padding: 16px;
   background: ${color.a2};
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 80px;
+  font-size: 48px;
   color: ${color.a5};
+
+  @media all and (min-width: 1024px) {
+    font-size: 80px;
+    padding: 32px 80px 0 80px;
+  }
 `;
 
 export const Wrapper = styled.div<IF_Wrapper>`
@@ -29,6 +34,9 @@ export const Wrapper = styled.div<IF_Wrapper>`
   align-items: center;
   gap: 40px;
   transition: 0.3s background;
+
+  @media all and (min-width: 1024px) {
+  }
 `;
 
 export const WrapperLeft = styled.div`

@@ -45,7 +45,6 @@ function Dashboard() {
         </Section>
         <Section type="secondary">
           <ContentWrapper>
-            <Img src={WEDDING_PICTURE} />
             <div>
               <DescriptionPrimary>Bismillahirrahmanirrahim</DescriptionPrimary>
               <DescriptionPrimary>
@@ -67,6 +66,7 @@ function Dashboard() {
                 sholehah dan bertaqwa kepada-Mu
               </p>
             </div>
+            <Img src={WEDDING_PICTURE} />
           </ContentWrapper>
         </Section>
         <Section>

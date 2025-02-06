@@ -7,8 +7,13 @@ interface Int_Img {
 
 export const ContentWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media all and (min-width: 1024px) {
+    flex-direction: row;
+  }
 `;
 
 export const ContentRight1 = styled.div`
@@ -44,16 +49,22 @@ export const DescriptionPrimary = styled.div`
   display: flex;
   justify-content: center;
   text-align: justify;
-  width: 480px;
   font-size: 20px;
   color: ${color.a1};
+
+  @media all and (min-width: 1024px) {
+    width: 480px;
+  }
 `;
 
 export const ArabicPrimary = styled.div`
   direction: rtl;
-  width: 480px;
   font-size: 24px;
   color: ${color.a1};
+
+  @media all and (min-width: 1024px) {
+    width: 480px;
+  }
 `;
 
 export const Img = styled.img<Int_Img>``;

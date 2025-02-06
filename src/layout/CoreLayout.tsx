@@ -14,7 +14,7 @@ import {
 } from "./_coreLayout";
 
 function CoreLayout(props: any) {
-  const [loading, setLoading] = useState("N");
+  const [loading, setLoading] = useState("Y");
 
   const { displaySupportUs } = useWidget();
 
