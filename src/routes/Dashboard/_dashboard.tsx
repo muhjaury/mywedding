@@ -100,12 +100,28 @@ export const Title3 = styled.div`
   color: ${color.a1};
 `;
 
-export const MapsWrapper = styled.div`
+export const MapsWrapper1 = styled.div`
+  display: none;
+
+  @media all and (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+`;
+
+export const MapsWrapper2 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8px;
+
+  @media all and (min-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const IFrame = styled.iframe`
@@ -150,15 +166,33 @@ export const Img = styled.img<Int_Img>`
   filter: drop-shadow(1px 1px 1px #222);
 `;
 
+export const ContentWrapper4 = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  @media all and (min-width: 1024px) {
+    flex-direction: row;
+  }
+`;
+
 export const ContentRight4 = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
+
+  @media all and (min-width: 1024px) {
+    flex-direction: column;
+    gap: 16px;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
 
   > div {
     min-width: 100px !important;
@@ -174,6 +208,10 @@ export const ButtonWrapper = styled.div`
         color: ${color.a1};
       }
     }
+  }
+
+  @media all and (min-width: 1024px) {
+    justify-content: left;
   }
 `;
 

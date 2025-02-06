@@ -7,7 +7,6 @@ import WEDDING_DECORATION from "./../../assets/img/decor.png";
 import WEDDING_PRAY from "./../../assets/img/muslim-pray.png";
 import WEDDING_PICTURE from "./../../assets/img/muslim-wedding.png";
 import {
-  A,
   ArabicPrimary,
   ButtonWrapper,
   ContentLeft2,
@@ -18,11 +17,13 @@ import {
   ContentRight4Date,
   ContentRight4Description,
   ContentWrapper,
+  ContentWrapper4,
   DescriptionPrimary,
   GapName,
   IFrame,
   Img,
-  MapsWrapper,
+  MapsWrapper1,
+  MapsWrapper2,
   NameBig1,
   NameBig2,
   NameSmall1,
@@ -112,15 +113,15 @@ function Dashboard() {
           <Countdown />
         </Section>
         <Section type="secondary">
-          <ContentWrapper>
-            <MapsWrapper>
+          <ContentWrapper4>
+            <MapsWrapper1>
               <IFrame
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3979.9215985273427!2d119.636662!3d-4.036422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1738825465463!5m2!1sen!2sid"
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-            </MapsWrapper>
+            </MapsWrapper1>
             <ContentRight4>
               <ContentRight4Description className={kissingSeason.className}>
                 Dengan memohon Ridho dan Rahmat Allah Subhanahu Wa Ta'ala, kami
@@ -133,6 +134,14 @@ function Dashboard() {
               <ContentRight4Description className={kissingSeason.className}>
                 Jl. Samsul Alam Bulu, Kota Parepare, Sulawesi Selatan
               </ContentRight4Description>
+              <MapsWrapper2>
+                <IFrame
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3979.9215985273427!2d119.636662!3d-4.036422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1738825465463!5m2!1sen!2sid"
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </MapsWrapper2>
               <ButtonWrapper>
                 <Button
                   onClick={handleClickMapsButton}
@@ -142,7 +151,7 @@ function Dashboard() {
                 </Button>
               </ButtonWrapper>
             </ContentRight4>
-          </ContentWrapper>
+          </ContentWrapper4>
         </Section>
       </Content>
     </CoreLayout>
