@@ -41,15 +41,18 @@ function Dashboard() {
       <Content>
         <Section>
           <ContentWrapper>
-            <Img src={WEDDING_PICTURE} />
+            <Img src={WEDDING_PICTURE} data-aos="fade-up" />
             <ContentRight1>
-              <ArabicPrimary>
+              <ArabicPrimary data-aos="fade-up">
                 وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ
                 أَزْوَٰجًا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم
                 مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍ لِّقَوْمٍ
                 يَتَفَكَّرُونَ
               </ArabicPrimary>
-              <DescriptionPrimary className={kissingSeason.className}>
+              <DescriptionPrimary
+                className={kissingSeason.className}
+                data-aos="fade-up"
+              >
                 "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
                 pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
                 cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di
@@ -57,7 +60,10 @@ function Dashboard() {
                 benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum
                 yang berpikir."
               </DescriptionPrimary>
-              <DescriptionPrimary style={{ fontWeight: "bold" }}>
+              <DescriptionPrimary
+                style={{ fontWeight: "bold" }}
+                data-aos="fade-up"
+              >
                 ~ QS Ar Rum Ayat 21 ~
               </DescriptionPrimary>
             </ContentRight1>
@@ -66,55 +72,78 @@ function Dashboard() {
         <Section type="secondary">
           <ContentWrapper>
             <ContentLeft2>
-              <ContentLeft2Title className={kissingSeason.className}>
+              <ContentLeft2Title
+                className={kissingSeason.className}
+                data-aos="fade-up"
+              >
                 Bismillahirrahmanirrahim
                 <br />
                 Assalamu'alaikum Warahmatullahi Wabarakatuh
               </ContentLeft2Title>
-              <ContentLeft2Description className={kissingSeason.className}>
+              <ContentLeft2Description
+                className={kissingSeason.className}
+                data-aos="fade-up"
+              >
                 Maha Suci Allah Subhanahu Wa Ta'ala, yang telah menciptakan
                 makhluk-Nya berpasang-pasangan, Ya Allah perkenankanlah kami
                 merangkaikan cinta kasih yang Engkau ciptakan kepada kami :
               </ContentLeft2Description>
               <div>
-                <NameBig1 className={helloValentina.className}>
+                <NameBig1
+                  className={helloValentina.className}
+                  data-aos="fade-up"
+                >
                   Muhammad Jaury, S.Tr.T.
                 </NameBig1>
-                <NameSmall1 className={helloValentina.className}>
+                <NameSmall1
+                  className={helloValentina.className}
+                  data-aos="fade-up"
+                >
                   Ary
                 </NameSmall1>
               </div>
-              <GapName className={helloValentina.className}>&</GapName>
+              <GapName className={helloValentina.className} data-aos="fade-up">
+                &
+              </GapName>
               <div>
-                <NameBig2 className={helloValentina.className}>
+                <NameBig2
+                  className={helloValentina.className}
+                  data-aos="fade-up"
+                >
                   Kiki Astrina, S.Pd.
                 </NameBig2>
-                <NameSmall2 className={helloValentina.className}>
+                <NameSmall2
+                  className={helloValentina.className}
+                  data-aos="fade-up"
+                >
                   Kiki
                 </NameSmall2>
               </div>
-              <ContentLeft2Description className={kissingSeason.className}>
+              <ContentLeft2Description
+                className={kissingSeason.className}
+                data-aos="fade-up"
+              >
                 Untuk melaksanakan syariat agama-Mu dan mengikuti sunnah
                 Rasul-Mu dalam membentuk ikatan keluarga yang Sakinah, Mawaddah,
                 Warahmah dengan harapan memperoleh keturunan yang sholeh,
                 sholehah dan bertaqwa kepada-Mu
               </ContentLeft2Description>
             </ContentLeft2>
-            <Img src={WEDDING_PRAY} />
+            <Img src={WEDDING_PRAY} data-aos="fade-up" behindtext="Y" />
           </ContentWrapper>
         </Section>
         <Section>
-          <Title3 className={helloValentina.className}>
+          <Title3 className={helloValentina.className} data-aos="fade-up">
             Our Wedding Countdown
           </Title3>
           <ContentWrapper>
-            <Img src={WEDDING_DECORATION} />
+            <Img src={WEDDING_DECORATION} data-aos="fade-up" />
           </ContentWrapper>
-          <Countdown />
+          <Countdown data-aos="fade-up" />
         </Section>
         <Section type="secondary">
           <ContentWrapper4>
-            <MapsWrapper1>
+            <MapsWrapper1 data-aos="fade-up">
               <IFrame
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3979.9215985273427!2d119.636662!3d-4.036422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1738825465463!5m2!1sen!2sid"
                 allowFullScreen={true}
@@ -123,18 +152,27 @@ function Dashboard() {
               />
             </MapsWrapper1>
             <ContentRight4>
-              <ContentRight4Description className={kissingSeason.className}>
+              <ContentRight4Description
+                className={kissingSeason.className}
+                data-aos="fade-up"
+              >
                 Dengan memohon Ridho dan Rahmat Allah Subhanahu Wa Ta'ala, kami
                 bermaksud menyelenggarakan Akad Nikah dan Resepsi kami, yang
                 Insya Allah akan dilaksanakan pada :
               </ContentRight4Description>
-              <ContentRight4Date className={helloValentina.className}>
+              <ContentRight4Date
+                className={helloValentina.className}
+                data-aos="fade-up"
+              >
                 Hari Sabtu, 19 April 2025
               </ContentRight4Date>
-              <ContentRight4Description className={kissingSeason.className}>
+              <ContentRight4Description
+                className={kissingSeason.className}
+                data-aos="fade-up"
+              >
                 Jl. Samsul Alam Bulu, Kota Parepare, Sulawesi Selatan
               </ContentRight4Description>
-              <MapsWrapper2>
+              <MapsWrapper2 data-aos="fade-up">
                 <IFrame
                   src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3979.9215985273427!2d119.636662!3d-4.036422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1738825465463!5m2!1sen!2sid"
                   allowFullScreen={true}
@@ -142,7 +180,7 @@ function Dashboard() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </MapsWrapper2>
-              <ButtonWrapper>
+              <ButtonWrapper data-aos="fade-up">
                 <Button
                   onClick={handleClickMapsButton}
                   className={kissingSeason.className}
