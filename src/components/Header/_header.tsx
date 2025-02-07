@@ -51,6 +51,10 @@ export const Nav = styled.span`
   font-weight: 600;
   cursor: pointer;
   transition: 0.5s;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   &:hover {
     color: #d9d9d9;
@@ -60,6 +64,10 @@ export const Nav = styled.span`
 export const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   > div {
     min-width: 100px !important;
