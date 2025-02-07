@@ -15,7 +15,7 @@ const Modal: React.FC<ModalProps> = ({ display, onClose }) => {
   return (
     <Wrapper>
       <Close src={CLOSE} onClick={handleCloseClick} />
-      <Content>Modal Test</Content>
+      <Content></Content>
     </Wrapper>
   );
 };

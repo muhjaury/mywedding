@@ -24,13 +24,19 @@ function Header() {
     };
   }, []);
 
+  const handleNavClick = (target: string) => {
+    if (target === "Home") {
+      return window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <HeaderText className={helloValentina.className}>
         Muhammad Jaury & Kiki Astrina
       </HeaderText>
       <Wrapper scrolled={scrolled}>
-        <Nav>Home</Nav>
+        <Nav onClick={() => handleNavClick("Home")}>Home</Nav>
         <Nav>Gallery</Nav>
         <ButtonWrapper>
           <Button onClick={() => setDisplaySupportUs(true)}>Support Us</Button>
