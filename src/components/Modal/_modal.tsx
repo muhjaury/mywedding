@@ -1,7 +1,7 @@
 import { color } from "@/constant/color";
 import styled from "styled-components";
 
-interface Int_Img {
+interface IF_Img {
   src: any;
   onClick?: Function;
 }
@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   background: rgba(0, 0, 0, 0.5);
 `;
 
-export const Close = styled.img<Int_Img>`
+export const Close = styled.img<IF_Img>`
   z-index: 100;
   position: absolute;
   height: 32px;

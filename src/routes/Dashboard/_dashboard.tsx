@@ -1,7 +1,7 @@
 import { color } from "@/constant/color";
 import styled from "styled-components";
 
-interface Int_Img {
+interface IF_Img {
   src: any;
   behindtext?: string;
 }
@@ -168,7 +168,7 @@ export const ArabicPrimary = styled.div`
   }
 `;
 
-export const Img = styled.img<Int_Img>`
+export const Img = styled.img<IF_Img>`
   -webkit-filter: drop-shadow(1px 1px 1px #222);
   filter: drop-shadow(1px 1px 1px #222);
 
