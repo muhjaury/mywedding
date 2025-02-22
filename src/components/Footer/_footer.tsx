@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Span = styled.span`
+  font-size: 16px;
   color: ${color.a4};
   cursor: pointer;
 `;
