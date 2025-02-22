@@ -13,18 +13,24 @@ import {
   LoadingWrapper,
   Wrapper,
 } from "./_coreLayout";
+import { GalleryContent } from "@/components/ModalContent";
 
 function CoreLayout(props: any) {
   const [loading, setLoading] = useState("Y");
 
-  const { displaySupportUs, setDisplaySupportUs } = useWidget();
+  const {
+    displayGallery,
+    displaySupportUs,
+    setDisplayGallery,
+    setDisplaySupportUs,
+  } = useWidget();
 
   useEffect(() => {
     AOS.init({ duration: 1500, once: true });
   }, []);
 
   const openInvitation = () => {
-    new Audio("/Yiruma-RiverFlowsInYou.mp3").play();
+    // new Audio("/Yiruma-RiverFlowsInYou.mp3").play();
     setLoading("N");
   };
 
@@ -49,6 +55,9 @@ function CoreLayout(props: any) {
           </>
         )}
       </Wrapper>
+      <Modal display={displayGallery} onClose={() => setDisplayGallery(false)}>
+        <GalleryContent />
+      </Modal>
       <Modal
         display={displaySupportUs}
         onClose={() => setDisplaySupportUs(false)}

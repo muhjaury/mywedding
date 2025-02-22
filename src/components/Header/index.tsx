@@ -7,7 +7,7 @@ import { ButtonWrapper, HeaderText, Nav, Wrapper } from "./_header";
 function Header() {
   const [scrolled, setScrolled] = useState("false");
 
-  const { setDisplaySupportUs } = useWidget();
+  const { setDisplayGallery, setDisplaySupportUs } = useWidget();
 
   useEffect(() => {
     const handleStickyScroll = () => {
@@ -37,7 +37,7 @@ function Header() {
       </HeaderText>
       <Wrapper scrolled={scrolled}>
         <Nav onClick={() => handleNavClick("Home")}>Home</Nav>
-        <Nav>Gallery</Nav>
+        <Nav onClick={() => setDisplayGallery(true)}>Gallery</Nav>
         <ButtonWrapper>
           <Button onClick={() => setDisplaySupportUs(true)}>Support Us</Button>
         </ButtonWrapper>

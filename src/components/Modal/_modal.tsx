@@ -35,8 +35,9 @@ export const Content = styled.div`
   position: absolute;
   border-radius: 25px;
   background: ${color.a4};
-  padding: 32px;
+  padding: 40px;
   color: ${color.a1};
+  overflow: hidden;
 
   width: 360px;
   height: 480px;

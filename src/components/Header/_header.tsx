@@ -25,7 +25,7 @@ export const Wrapper = styled.div<IF_Wrapper>`
   position: sticky;
   z-index: 5;
   top: 0;
-  padding: 32px 80px;
+  padding: 16px;
   height: 100px;
   background: ${({ scrolled }) =>
     scrolled === "true" ? "rgba(114, 125, 115, 0.8)" : `${color.a2}`};
@@ -36,6 +36,7 @@ export const Wrapper = styled.div<IF_Wrapper>`
   transition: 0.3s background;
 
   @media all and (min-width: 1024px) {
+    padding: 32px 80px;
   }
 `;
 
