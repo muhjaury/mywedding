@@ -30,7 +30,7 @@ function CoreLayout(props: any) {
   }, []);
 
   const openInvitation = () => {
-    // new Audio("/Yiruma-RiverFlowsInYou.mp3").play();
+    new Audio("/Yiruma-RiverFlowsInYou.mp3").play();
     setLoading("N");
   };
 
