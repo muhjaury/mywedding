@@ -1,13 +1,12 @@
 import { helloValentina } from "@/assets/font";
 import { useWidget } from "@/context";
 import { useEffect, useState } from "react";
-import { Button } from "..";
-import { ButtonWrapper, HeaderText, Nav, Wrapper } from "./_header";
+import { HeaderText, Nav, Wrapper } from "./_header";
 
 function Header() {
   const [scrolled, setScrolled] = useState("false");
 
-  const { setDisplayGallery, setDisplaySupportUs } = useWidget();
+  const { setDisplayGallery } = useWidget();
 
   useEffect(() => {
     const handleStickyScroll = () => {
@@ -38,9 +37,6 @@ function Header() {
       <Wrapper scrolled={scrolled}>
         <Nav onClick={() => handleNavClick("Home")}>Home</Nav>
         <Nav onClick={() => setDisplayGallery(true)}>Gallery</Nav>
-        <ButtonWrapper>
-          <Button onClick={() => setDisplaySupportUs(true)}>Support Us</Button>
-        </ButtonWrapper>
       </Wrapper>
     </>
   );

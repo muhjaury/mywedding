@@ -1,9 +1,14 @@
 import { color } from "@/constant/color";
 import styled from "styled-components";
 
+interface IF_Content {
+  type?: string;
+}
+
 interface IF_Img {
   src: any;
   onClick?: Function;
+  type?: string;
 }
 
 export const Wrapper = styled.div`
@@ -26,12 +31,14 @@ export const Close = styled.img<IF_Img>`
   cursor: pointer;
 
   @media all and (min-width: 1024px) {
-    right: calc((100vw - 960px) / 2);
+    right: calc(
+      (100vw - ${({ type }) => (type === "secondary" ? "440px" : "960px")}) / 2
+    );
     top: calc((100vh - 456px) / 2);
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled.div<IF_Content>`
   position: absolute;
   border-radius: 25px;
   background: ${color.a4};
@@ -45,9 +52,11 @@ export const Content = styled.div`
   margin-top: calc((100vh - 480px) / 2);
 
   @media all and (min-width: 1024px) {
-    width: 960px;
+    width: ${({ type }) => (type === "secondary" ? "440px" : "960px")};
     height: 480px;
-    margin-left: calc((100vw - 960px) / 2);
+    margin-left: calc(
+      (100vw - ${({ type }) => (type === "secondary" ? "440px" : "960px")}) / 2
+    );
     margin-top: calc((100vh - 480px) / 2);
   }
 `;

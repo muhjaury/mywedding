@@ -1,7 +1,7 @@
 "use client";
 
 import { Footer, Header, Loading, Modal } from "@/components";
-import { GalleryContent } from "@/components/ModalContent";
+import { GalleryContent, SupportUsContent } from "@/components/ModalContent";
 import { useWidget } from "@/context";
 import debounce from "@/utils/debounced";
 import AOS from "aos";
@@ -30,7 +30,7 @@ function CoreLayout(props: any) {
   }, []);
 
   const openInvitation = () => {
-    new Audio("/Yiruma-RiverFlowsInYou.mp3").play();
+    // new Audio("/Yiruma-RiverFlowsInYou.mp3").play();
     setLoading("N");
   };
 
@@ -61,7 +61,10 @@ function CoreLayout(props: any) {
       <Modal
         display={displaySupportUs}
         onClose={() => setDisplaySupportUs(false)}
-      ></Modal>
+        type="secondary"
+      >
+        <SupportUsContent />
+      </Modal>
     </>
   );
 }

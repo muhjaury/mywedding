@@ -7,12 +7,36 @@ export const Wrapper = styled.div`
   padding: 16px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: ${color.a1};
 
   @media all and (min-width: 1024px) {
     padding: 32px 80px;
-    justify-content: space-between;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  > div {
+    min-width: 100px !important;
+    transition: 0.2s;
+    > button {
+      font-size: 16px;
+      color: ${color.a1};
+    }
+
+    &:hover {
+      padding-bottom: 8px;
+      > button {
+        color: ${color.a1};
+      }
+    }
   }
 `;
 

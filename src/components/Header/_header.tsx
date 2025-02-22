@@ -61,28 +61,3 @@ export const Nav = styled.span`
     color: #d9d9d9;
   }
 `;
-
-export const ButtonWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-  > div {
-    min-width: 100px !important;
-    transition: 0.2s;
-    > button {
-      font-size: 16px;
-      color: ${color.a1};
-    }
-
-    &:hover {
-      padding-bottom: 8px;
-      > button {
-        color: ${color.a1};
-      }
-    }
-  }
-`;
