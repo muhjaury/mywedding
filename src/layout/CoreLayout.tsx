@@ -6,8 +6,9 @@ import { useWidget } from "@/context";
 import debounce from "@/utils/debounced";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
+  Audio,
   Content,
   Div,
   LoadingContentWrapper,
@@ -20,8 +21,11 @@ import {
 } from "./_coreLayout";
 
 function CoreLayout(props: any) {
-  const [loading, setLoading] = useState("Y");
+  const [loading, setLoading] = useState<string>("Y");
   const [name, setName] = useState<string>("Our Family / Friend");
+  const [audioTrigger, setAudioTrigger] = useState<boolean>(false);
+
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   const { displayGallery, displayGiftUs, setDisplayGallery, setDisplayGiftUs } =
     useWidget();
@@ -39,8 +43,31 @@ function CoreLayout(props: any) {
     }
   }, []);
 
+  useEffect(() => {
+    const handleAudio = () => {
+      if (document.hidden) {
+        if (audioRef.current) {
+          audioRef.current.pause();
+        }
+      } else {
+        if (audioTrigger && audioRef.current) {
+          audioRef.current.play();
+        }
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleAudio);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleAudio);
+    };
+  }, [audioTrigger]);
+
   const openInvitation = () => {
-    new Audio("/Yiruma-RiverFlowsInYou.mp3").play();
+    if (audioRef.current) {
+      setAudioTrigger(true);
+      audioRef.current.play();
+    }
     setLoading("N");
   };
 
@@ -48,6 +75,7 @@ function CoreLayout(props: any) {
 
   return (
     <>
+      <Audio ref={audioRef} src="/Yiruma-RiverFlowsInYou.mp3" />
       <Wrapper loading={loading}>
         {loading === "Y" ? (
           <>

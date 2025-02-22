@@ -14,6 +14,10 @@ export const Wrapper = styled.div<IF_Wrapper>`
   background: ${color.a4};
 `;
 
+export const Audio = styled.audio`
+  display: none;
+`;
+
 export const LoadingWrapper = styled.div`
   border-radius: 24px;
   border: 2px solid ${color.a1};
