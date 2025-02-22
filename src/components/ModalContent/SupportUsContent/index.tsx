@@ -39,7 +39,7 @@ function SupportUsContent() {
         <AccountNumber>5859459264145615</AccountNumber>
         <AccountValue>a.n. Kiki Astrina</AccountValue>
       </AccountWrapper>
-      <Coppied>{coppied && "Coppied"}</Coppied>
+      {coppied && <Coppied>Coppied</Coppied>}
     </Wrapper>
   );
 }
