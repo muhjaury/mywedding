@@ -4,12 +4,12 @@ import { createContext, useContext, useState } from "react";
 
 const useValue = () => {
   const [displayGallery, setDisplayGallery] = useState<boolean>(false);
-  const [displaySupportUs, setDisplaySupportUs] = useState<boolean>(false);
+  const [displayGiftUs, setDisplayGiftUs] = useState<boolean>(false);
 
   return {
     displayGallery,
-    displaySupportUs,
-    setDisplaySupportUs,
+    displayGiftUs,
+    setDisplayGiftUs,
     setDisplayGallery,
   };
 };

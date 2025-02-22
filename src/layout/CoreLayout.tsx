@@ -1,7 +1,7 @@
 "use client";
 
 import { Footer, Header, Loading, Modal } from "@/components";
-import { GalleryContent, SupportUsContent } from "@/components/ModalContent";
+import { GalleryContent, GiftUsContent } from "@/components/ModalContent";
 import { useWidget } from "@/context";
 import debounce from "@/utils/debounced";
 import AOS from "aos";
@@ -10,23 +10,33 @@ import { useEffect, useState } from "react";
 import {
   Content,
   Div,
+  LoadingContentWrapper,
+  LoadingName,
+  LoadingRowWrapper,
   LoadingText,
+  LoadingTitle,
   LoadingWrapper,
   Wrapper,
 } from "./_coreLayout";
 
 function CoreLayout(props: any) {
   const [loading, setLoading] = useState("Y");
+  const [name, setName] = useState<string>("Our Family / Friend");
 
-  const {
-    displayGallery,
-    displaySupportUs,
-    setDisplayGallery,
-    setDisplaySupportUs,
-  } = useWidget();
+  const { displayGallery, displayGiftUs, setDisplayGallery, setDisplayGiftUs } =
+    useWidget();
 
   useEffect(() => {
     AOS.init({ duration: 1500, once: true });
+  }, []);
+
+  useEffect(() => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const to = urlParams.get("to");
+    if (to) {
+      setName(to ?? "");
+    }
   }, []);
 
   const openInvitation = () => {
@@ -41,9 +51,19 @@ function CoreLayout(props: any) {
       <Wrapper loading={loading}>
         {loading === "Y" ? (
           <>
-            <LoadingWrapper onClick={() => handleLoadingClick()}>
-              <Loading />
-              <LoadingText>Buka Undangan</LoadingText>
+            <LoadingWrapper>
+              {name && (
+                <LoadingRowWrapper>
+                  <Loading />
+                  <LoadingContentWrapper>
+                    <LoadingTitle>Dear</LoadingTitle>
+                    <LoadingName>{name}</LoadingName>
+                  </LoadingContentWrapper>
+                </LoadingRowWrapper>
+              )}
+              <LoadingText onClick={() => handleLoadingClick()}>
+                Open Invitation
+              </LoadingText>
             </LoadingWrapper>
           </>
         ) : (
@@ -59,11 +79,11 @@ function CoreLayout(props: any) {
         <GalleryContent />
       </Modal>
       <Modal
-        display={displaySupportUs}
-        onClose={() => setDisplaySupportUs(false)}
+        display={displayGiftUs}
+        onClose={() => setDisplayGiftUs(false)}
         type="secondary"
       >
-        <SupportUsContent />
+        <GiftUsContent />
       </Modal>
     </>
   );

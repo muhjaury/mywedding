@@ -1,4 +1,4 @@
 import GalleryContent from "./GalleryContent";
-import SupportUsContent from "./SupportUsContent";
+import GiftUsContent from "./GiftUsContent";
 
-export { GalleryContent, SupportUsContent };
+export { GalleryContent, GiftUsContent };

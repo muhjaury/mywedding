@@ -6,9 +6,9 @@ import {
   AccountWrapper,
   Coppied,
   Wrapper,
-} from "./_supportUsContent";
+} from "./_giftUsContent";
 
-function SupportUsContent() {
+function GiftUsContent() {
   const [coppied, setCoppied] = useState<boolean>(false);
 
   useEffect(() => {
@@ -44,4 +44,4 @@ function SupportUsContent() {
   );
 }
 
-export default SupportUsContent;
+export default GiftUsContent;

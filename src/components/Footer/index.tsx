@@ -3,7 +3,7 @@ import { Button, Content } from "..";
 import { ButtonWrapper, Span, Wrapper } from "./_footer";
 
 function Footer() {
-  const { setDisplaySupportUs } = useWidget();
+  const { setDisplayGiftUs } = useWidget();
 
   const handleNameClick = () => {
     window.open("https://github.com/muhjaury");
@@ -16,7 +16,7 @@ function Footer() {
       </Content>
       <Content>
         <ButtonWrapper>
-          <Button onClick={() => setDisplaySupportUs(true)}>Support Us</Button>
+          <Button onClick={() => setDisplayGiftUs(true)}>Gift Us</Button>
         </ButtonWrapper>
       </Content>
     </Wrapper>
