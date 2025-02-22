@@ -1,6 +1,7 @@
 "use client";
 
 import { Footer, Header, Loading, Modal } from "@/components";
+import { GalleryContent } from "@/components/ModalContent";
 import { useWidget } from "@/context";
 import debounce from "@/utils/debounced";
 import AOS from "aos";
@@ -13,7 +14,6 @@ import {
   LoadingWrapper,
   Wrapper,
 } from "./_coreLayout";
-import { GalleryContent } from "@/components/ModalContent";
 
 function CoreLayout(props: any) {
   const [loading, setLoading] = useState("Y");
