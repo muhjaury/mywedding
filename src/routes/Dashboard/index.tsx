@@ -9,6 +9,7 @@ import WEDDING_PICTURE from "./../../assets/img/muslim-wedding.png";
 import {
   ArabicPrimary,
   ButtonWrapper,
+  ContenRight4DateWrapper,
   ContentLeft2,
   ContentLeft2Description,
   ContentLeft2Title,
@@ -16,6 +17,7 @@ import {
   ContentRight4,
   ContentRight4Date,
   ContentRight4Description,
+  ContentRight4Time,
   ContentWrapper,
   ContentWrapper4,
   DescriptionPrimary,
@@ -145,12 +147,20 @@ function Dashboard() {
                 bermaksud menyelenggarakan Akad Nikah dan Resepsi kami, yang
                 Insya Allah akan dilaksanakan pada :
               </ContentRight4Description>
-              <ContentRight4Date
-                className={helloValentina.className}
-                data-aos="fade-up"
-              >
-                Hari Sabtu, 19 April 2025
-              </ContentRight4Date>
+              <ContenRight4DateWrapper>
+                <ContentRight4Date
+                  className={helloValentina.className}
+                  data-aos="fade-up"
+                >
+                  Hari Sabtu, 19 April 2025
+                </ContentRight4Date>
+                <ContentRight4Time
+                  className={helloValentina.className}
+                  data-aos="fade-up"
+                >
+                  Pukul 10.00 WITA - Selesai
+                </ContentRight4Time>
+              </ContenRight4DateWrapper>
               <ContentRight4Description data-aos="fade-up">
                 Jl. Samsul Alam Bulu, Kota Parepare, Sulawesi Selatan
               </ContentRight4Description>

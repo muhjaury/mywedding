@@ -232,6 +232,12 @@ export const ContentRight4Description = styled.div`
   font-size: 24px;
 `;
 
+export const ContenRight4DateWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`;
+
 export const ContentRight4Date = styled.div`
   text-align: center;
   color: ${color.a5};
@@ -239,5 +245,15 @@ export const ContentRight4Date = styled.div`
 
   @media all and (min-width: 1024px) {
     font-size: 56px;
+  }
+`;
+
+export const ContentRight4Time = styled.div`
+  text-align: center;
+  color: ${color.a5};
+  font-size: 32px;
+
+  @media all and (min-width: 1024px) {
+    font-size: 40px;
   }
 `;
