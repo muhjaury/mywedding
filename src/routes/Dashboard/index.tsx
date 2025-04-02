@@ -135,7 +135,7 @@ function Dashboard() {
           <ContentWrapper4>
             <MapsWrapper1 data-aos="fade-up">
               <IFrame
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3979.9215985273427!2d119.636662!3d-4.036422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1738825465463!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3979.9214220660087!2d119.636721!3d-4.0364580000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMDInMTEuMyJTIDExOcKwMzgnMTIuMiJF!5e0!3m2!1sen!2sid!4v1743554446782!5m2!1sen!2sid"
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
