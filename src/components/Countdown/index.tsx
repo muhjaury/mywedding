@@ -14,7 +14,7 @@ function Countdown(props: any) {
   const [seconds, setSeconds] = useState<string>("00");
 
   useEffect(() => {
-    const countDownDate = moment("Apr 19, 2025 08:00:00").tz("Asia/Makassar");
+    const countDownDate = moment().tz("Asia/Makassar").add(90, "days");
 
     var x = setInterval(function () {
       const timeNow = moment().tz("Asia/Makassar");
@@ -42,7 +42,7 @@ function Countdown(props: any) {
         setSeconds(seconds);
       }
     }, 1000);
-  });
+  }, []);
 
   return (
     <Wrapper {...props}>
