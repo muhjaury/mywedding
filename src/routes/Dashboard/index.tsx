@@ -86,13 +86,13 @@ function Dashboard() {
                   className={helloValentina.className}
                   data-aos="fade-up"
                 >
-                  Muhammad Jaury, S.Tr.T.
+                  Bagus Setiawan, S.T.
                 </NameBig1>
                 <NameSmall1
                   className={helloValentina.className}
                   data-aos="fade-up"
                 >
-                  Ary
+                  Bagus
                 </NameSmall1>
               </div>
               <GapName className={helloValentina.className} data-aos="fade-up">
@@ -103,13 +103,13 @@ function Dashboard() {
                   className={helloValentina.className}
                   data-aos="fade-up"
                 >
-                  Kiki Astrina, S.Pd.
+                  Dewi Sartika, S.T.
                 </NameBig2>
                 <NameSmall2
                   className={helloValentina.className}
                   data-aos="fade-up"
                 >
-                  Kiki
+                  Dewi
                 </NameSmall2>
               </div>
               <ContentLeft2Description data-aos="fade-up">

@@ -32,7 +32,7 @@ function Header() {
   return (
     <>
       <HeaderText className={helloValentina.className}>
-        Muhammad Jaury & Kiki Astrina
+        Bagus Setiawan & Dewi Sartika
       </HeaderText>
       <Wrapper scrolled={scrolled}>
         <Nav onClick={() => handleNavClick("Home")}>Home</Nav>

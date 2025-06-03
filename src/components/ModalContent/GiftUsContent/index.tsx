@@ -31,13 +31,13 @@ function GiftUsContent() {
     <Wrapper>
       <AccountWrapper onClick={handleFirstAccClick}>
         <AccountLabel>Bank Mandiri</AccountLabel>
-        <AccountNumber>1520032030328</AccountNumber>
-        <AccountValue>a.n. Muhammad Jaury</AccountValue>
+        <AccountNumber>1520032030311</AccountNumber>
+        <AccountValue>a.n. Bagus Setiawan</AccountValue>
       </AccountWrapper>
       <AccountWrapper onClick={handleSecondAccClick}>
         <AccountLabel>Bank Neo Commerce</AccountLabel>
-        <AccountNumber>5859459264145615</AccountNumber>
-        <AccountValue>a.n. Kiki Astrina</AccountValue>
+        <AccountNumber>5859459264145622</AccountNumber>
+        <AccountValue>a.n. Dewi Sartika</AccountValue>
       </AccountWrapper>
       {coppied && <Coppied>Coppied</Coppied>}
     </Wrapper>
