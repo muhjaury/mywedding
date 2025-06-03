@@ -18,20 +18,6 @@ function GalleryContent() {
         <Img src={Images.IMG9} alt="img9" />
         <Img src={Images.IMG10} alt="img10" />
       </ImgWrapper>
-      <ImgWrapper>
-        <Img src={Images.IMG11} alt="img11" />
-        <Img src={Images.IMG12} alt="img12" />
-        <Img src={Images.IMG13} alt="img13" />
-        <Img src={Images.IMG14} alt="img14" />
-        <Img src={Images.IMG15} alt="img15" />
-      </ImgWrapper>
-      <ImgWrapper>
-        <Img src={Images.IMG16} alt="img16" />
-        <Img src={Images.IMG17} alt="img17" />
-        <Img src={Images.IMG18} alt="img18" />
-        <Img src={Images.IMG19} alt="img19" />
-        <Img src={Images.IMG20} alt="img20" />
-      </ImgWrapper>
     </Wrapper>
   );
 }
